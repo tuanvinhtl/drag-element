@@ -72,12 +72,13 @@ for (const resizer of resizers) {
 
             prevX = e.clientX;
             prevY = e.clientY;
+            console.log(prevX)
         }
 
         function mouseup(e) {
             window.removeEventListener('mousemove', mousemove);
             window.removeEventListener('mouseup', mouseup);
-            isResizing = false;
+            isResizing = false; 
         }
     }
 }
